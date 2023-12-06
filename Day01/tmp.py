@@ -2,8 +2,6 @@ document = []
 with open('t.txt') as f:
     document = f.readlines()
 
-calibration = []
-
 sum = 0
 
 for t in document:
@@ -20,10 +18,6 @@ for t in document:
         else:
             num2 = num1    
                 
-    calibration.append(num1 + num2)
-    
-
-for i in calibration:
-    sum = sum + int(i)
+    sum = sum + int(num1 + num2)
     
 print(sum)
